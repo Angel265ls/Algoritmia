@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+   <header>
+    <h1>Algoritmia</h1>
+   </header>
+   <div class="menu">
+    <p data-target="#Algoritmia1">Algoritmia 1</p>
+    <p data-target="#Algoritmia2">Algoritmia 2</p>
+    <p data-target="#Algoritmia3">Algoritmia 3</p>
+  </div>
+  
+  <div class="content">
+    <div data-content id="Algoritmia1" class="active">
+        <div class="General">Algoritmia 1</div>
+        <body>
+            <form id="formulariodelbanco" action="" onsubmit="return validar(this)">
+                <label for="Capitalinicial">Formulario 1 "inversion"</label>
+                <h2>Capital Inicial</h2>
+                <br>
+                <input type="text" id="Capitalinicial" name="Capitalinicial" required>
+                <input type="submit" value="Calculr">
+            <div id="resultado1" style="display: none;">
+                <h2>Ganancia en un mes:</h2>
+                <p id="Ganancia1"></p>
+            </div>
+            </form>
+            <script src="./js/al1.js"></script>
+            </body>
+       <footer>ELABORADA POR LUIS ANGEL JIMENEZ PIÑA</footer>
+    
+    
+    </div>
+   
+    <div data-content id="Algoritmia2">
+         
+        <div class="General">Algoritmia 2</div>
+       
+        <body>
+            <div class="container">
+                <h1>Ventas</h1>
+                <form id="formulariodeventas">
+                    <label for="Salriobase">Sueldo base</label>
+                    <br>
+                    <input type="text" id="Salariobase" name="Sueldobase">
+                    <br>
+                    <label for="venta1">Venta 1</label>
+                    <br>
+                    <input type="text" id="venta1" name="venta1">
+                    <br>
+                    <label for="venta2">Venta 2</label>
+                    <br>
+                    <input type="text" id="venta2" name="venta2">
+                    <br>
+                    <label for="venta3">Venta 3</label>
+                    <br>
+                    <input type="text" id="venta3" name="venta3">
+                    <br></br>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado" class="hidden"></div>
+            </div>
+            <script src="./js/als2.js"></script>
+        </body>
+       <footer>ELABORADA POR LUIS ANGEL JIMENEZ PIÑA</footer>
+
+    </div>
+    
+    <div data-content id="Algoritmia3">
+        
+        <div class="General">Algoritmia 3</div>
+        <body>
+   
+            <form>
+                <label for="totalCompra">Precio de la compra</label>
+                <input type="text" id="totalCompra" name="totalCompra" step="0.01" required><br><br>
+                <button type="button" onclick="calcularDescuento()">Calcular descuento</button><br><br>
+                <label for="totalAPagar">Total a pagar después del descuento:</label>
+                <input type="text" id="totalAPagar" name="totalAPagar" readonly><br><br>
+            </form>
+            <script src="./js/al3.js"></script>
+        </body>
+       <footer>ELABORADA POR LUIS ANGEL JIMENEZ PIÑA</footer>
+
+    </div>
+    
+   
+  </div>
+
+</body>
+</html>
